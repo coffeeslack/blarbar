@@ -1,0 +1,52 @@
+.dragSummary {
+  background-color: white;
+  display: inline-flex;
+  width: 48%;
+  height: 140px;
+  margin-left: 4px;
+  margin-top: 4px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 5px;
+  flex-direction: column;
+}
+.dragSummaryPic {
+  width: 100%;
+  height: 60%;
+  display: block;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.dragSummaryPic img {
+  width: 100%;
+  height: 70px;
+}
+.dragSummaryTitle {
+  font-size: 13px;
+}
+.dragSummaryPercent {
+  float: right;
+}
+.dragSummaryMiniDetails {
+  font-size: 11px;
+  padding-top: 5px;
+  color: #464646;
+  text-align: center;
+}
+.higherDrag {
+  color: #1278dc;
+}
+@media screen and (min-width: 480px) {
+  .dragSummary {
+    width: 48%;
+    height: 200px;
+  }
+  .dragSummaryPic img {
+    width: 100%;
+    height: 110px;
+  }
+  .dragSummaryDetails {
+    font-size: 11px;
+    padding-top: 7px;
+  }
+}

@@ -1,0 +1,188 @@
+.searchHeader {
+  background: linear-gradient(90deg, rgb(245, 119, 140), rgb(18, 120, 220));
+  height: 40px;
+  padding: 5px;
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.searchBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.searchBox {
+  width: 100%;
+  margin: 0px auto;
+  padding: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.searchBoxText {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 90%;
+  color: white;
+  font-size: 15px;
+}
+.searchBoxText:focus {
+  outline: none;
+}
+.searchBoxText::placeholder {
+  color: white;
+}
+.searchBox img {
+  float: right;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 2px;
+}
+.searchBody {
+  color: black;
+  width: 100%;
+  height: 90vh;
+  margin-top: 35px;
+  margin-bottom: 70px;
+  background-color: white;
+  padding: 5px;
+}
+.searchResultContainer {
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid rgb(219, 219, 219); */
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.searchResultContainer:last-child {
+  border-bottom: none;
+}
+.searchResultWrap {
+  display: flex;
+  align-items: center;
+}
+.searchResultImage {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchResultImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.searchResultName {
+  display: inline-block;
+  margin-left: 10px;
+}
+.searchResultDisplayName {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.searchResultUserName {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: grey;
+}
+a {
+  color: initial;
+}
+.searchTabMenu {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  top: 38px;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 4;
+}
+.searchTabBtn {
+  display: inline-block;
+  color: #464646;
+  width: 50%;
+  font-size: 12px;
+  padding-bottom: 7px;
+  padding: 10px;
+}
+.searchDiscover {
+  margin-top: 50px;
+  padding-bottom: 55px;
+}
+.searchBox .backBtn {
+  display: none;
+}
+.searchAllUsers {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .searchBox .backBtn {
+    display: inline-flex;
+    margin-right: 20px;
+  }
+  .searchBody {
+    color: black;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+    margin-top: 40px;
+    height: 100vh;
+  }
+  .searchBox {
+    width: 100%;
+    padding: 3px;
+    position: fixed;
+    top: 6px;
+    left: 0;
+  }
+  .searchDiscover {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .searchAllUsers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .searchBody {
+    color: black;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+    margin-top: 40px;
+    padding-bottom: 100px;
+    height: 100vh;
+  }
+  .searchHeader {
+    background: linear-gradient(90deg, rgb(245, 119, 140), rgb(18, 120, 220));
+    height: 40px;
+    padding: 5px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  #discover {
+    display: none;
+  }
+  #desktopSearch {
+    display: block;
+  }
+}

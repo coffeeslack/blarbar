@@ -1,0 +1,378 @@
+#profileNavbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: top 0.3s;
+  background: linear-gradient(90deg, #f5778c, #1278dc);
+  color: white;
+  padding: 5px;
+  left: 0;
+  height: 35px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+#profileNavbar .headerTitle {
+  padding-left: 10px;
+  display: inline-block;
+}
+.profileContainer {
+  overflow: scroll;
+  height: 100vh;
+  background-color: white;
+}
+.LogOutPrompt {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logOutPromptBox {
+  background-color: white;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+  animation: zoom 0.3s ease;
+}
+.promptOption,
+.promptOptionNo {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+.promptOption:active,
+.promptOptionNo:active {
+  background-color: lightgray;
+  border-radius: 50px;
+}
+.promptOptionNo {
+  border-right: 1px solid gray;
+}
+.profileMenu {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+}
+.profileMenuBox {
+  background-color: white;
+  width: 50%;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  z-index: 4;
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.profileMenuBox div {
+  padding: 10px;
+}
+.profileMenuBtn {
+  position: absolute;
+  right: 20px;
+  height: 5px;
+  font-size: 22px;
+  width: 5px;
+  top: 7px;
+}
+.profileCoverPhoto {
+  width: 100%;
+  /* height: 200px; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+.coverPhoto {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  /* position: fixed; */
+}
+.coverPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileDetails {
+  background-color: white;
+  margin: -50px auto 0px;
+  width: 98%;
+  padding: 0px 10px 10px;
+  position: relative;
+  border-radius: 5px;
+  /* border: 1px solid #acacac; */
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.profileUserDetails {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.profileProfilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+.profileProfilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileUserNameContainer {
+  display: inline-block;
+  margin-left: 5px;
+}
+.profileDisplayName {
+  font-size: 15px;
+  font-weight: bold;
+}
+.profileUserName {
+  font-size: 11px;
+  color: #464646;
+}
+.profileEditBtn {
+  position: absolute;
+  right: 10px;
+}
+.profileEditBtn button {
+  background: linear-gradient(90deg, rgb(245, 119, 140), #1278dc);
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 15px;
+}
+.profileEditBtn button:focus {
+  outline: none;
+}
+.profileFollow {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+.profileFollowContainer {
+  display: inline-block;
+  padding: 5px 10px;
+}
+.profileFollowNum {
+  font-size: 13px;
+  font-weight: 500;
+}
+.profileFollowLabel {
+  font-size: 12px;
+  color: #464646;
+}
+.profileTabMenu {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  margin-top: 15px;
+}
+.profileTabBtn {
+  display: inline-block;
+  color: #464646;
+  width: 50%;
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+.selectedTab {
+  color: #1278dc;
+  font-weight: 600;
+  border-bottom: 1px solid #1278dc;
+}
+.profileDragsContainer {
+  padding-top: 4px;
+  width: 100%;
+  padding-bottom: 50px;
+  overflow: auto;
+}
+.profileSavedDragsContainer {
+  padding-top: 4px;
+  width: 100%;
+  padding-bottom: 50px;
+  overflow: auto;
+}
+.profileBio {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.noSavedDrags {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.profileDragContainer {
+  display: block;
+  margin: 5px auto 5px;
+  width: 98%;
+  border-radius: 5px;
+  padding: 10px 0px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  /* border: 1px solid rgb(165, 165, 165); */
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  #profileNavbar {
+    height: 40px;
+  }
+  .profileBody {
+    width: 60%;
+    margin: 0px auto;
+    padding: 30px;
+    height: 100%;
+  }
+  .profileTabBtn,
+  .profileMenuBox div,
+  .profileEditBtn button,
+  .promptOption,
+  .promptOptionNo {
+    cursor: pointer;
+  }
+  .coverPhoto {
+    width: 100%;
+    height: 250px !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    /* position: fixed; */
+  }
+  .profileCoverPhoto {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  .profileMenuBox {
+    background-color: white;
+    width: 20%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    z-index: 4;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (min-width: 900px) {
+  .profileMenuBtn {
+    position: absolute;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    top: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profileMenuBtn:hover {
+    background-color: rgb(245, 119, 140);
+    transition: 0.2s ease;
+  }
+  .profileMenuBtn img {
+    width: 15%;
+  }
+  .profileBody {
+    width: 50%;
+    margin: 0px auto;
+    padding: 30px;
+    height: 100%;
+  }
+  .profileContainer {
+    height: 100vh;
+    background-color: white;
+  }
+  .profileDragsContainer {
+    padding: 4px;
+    width: 100%;
+    padding-bottom: 50px;
+    height: 100%;
+    overflow: auto;
+  }
+  .profileTabBtn,
+  .profileMenuBox div,
+  .profileEditBtn button,
+  .promptOption,
+  .promptOptionNo {
+    cursor: pointer;
+  }
+  .profileDetails {
+    background-color: white;
+    margin: -30px auto 0px;
+  }
+  .profileDragContainer {
+    display: block;
+    margin: 5px auto 5px;
+    width: 98%;
+    border-radius: 5px;
+    padding: 10px 0px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    /* border: 1px solid rgb(165, 165, 165); */
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+  }
+  .coverPhoto {
+    width: 100%;
+    height: 250px !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    /* position: fixed; */
+  }
+  .profileCoverPhoto {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+  }
+  #profileNavbar {
+    height: 45px;
+  }
+  .profileSavedDragsContainer {
+    padding-top: 4px;
+    width: 100%;
+    padding-bottom: 50px;
+    overflow: auto;
+  }
+  .profileMenuBox {
+    background-color: white;
+    width: 10%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    z-index: 4;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.1);
+  }
+}

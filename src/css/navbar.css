@@ -1,0 +1,166 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(90deg, #f5778c, #1278dc);
+  width: 100%;
+  padding: 5px;
+  z-index: 2;
+}
+.navbar .navIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  cursor: none;
+}
+.navbar .gradientBorder {
+  width: 100%;
+  /* height: 2px; */
+  /* background: lightgrey; */
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+.addIcon {
+  color: white;
+  opacity: 0.5;
+  font-size: 25px;
+}
+.icon {
+  color: white;
+  opacity: 0.5;
+  font-size: 25px;
+}
+.iconSelected {
+  color: white;
+  font-size: 25px;
+}
+.iconSelectedBlue {
+  color: white;
+  font-size: 25px;
+}
+.notificationCount {
+  background: white;
+  color: #1278dc;
+  padding: 1px;
+  font-size: 9px;
+  border-radius: 50px;
+  height: 12px;
+  width: 12px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 32px;
+  top: 0px;
+}
+.discoverIcon {
+  display: none !important;
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .navbar {
+    position: fixed;
+    top: 2px;
+    right: 35%;
+    background: none;
+    width: 30%;
+    padding: 2px;
+    border-radius: 50px;
+    height: 35px;
+    z-index: 2;
+  }
+  .navbar .navIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 900px) {
+  .searchIcon,
+  .notificationsIcon {
+    display: none !important;
+  }
+  .navbar {
+    position: fixed;
+    top: 4px;
+    right: 36%;
+    background: none;
+    width: 20%;
+    padding: 2px;
+    border-radius: 50px;
+    height: 35px;
+    z-index: 2;
+  }
+  .navbar .gradientBorder {
+    display: none;
+  }
+  .navbar .navIcon span {
+    background: #f5778c;
+    padding: 5px;
+    border-radius: 50px;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 1px;
+    margin-top: -40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .addIcon {
+    color: white;
+    opacity: 0.5;
+  }
+  .navbar .navIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+  }
+  .icon {
+    color: white;
+    opacity: 0.5;
+    font-size: 20px;
+  }
+  .iconSelected {
+    color: white;
+    font-size: 20px;
+  }
+  .iconSelectedBlue {
+    color: white;
+    font-size: 20px;
+  }
+  .notificationCount {
+    background: rgb(245, 119, 140);
+    color: white;
+    padding: 1px;
+    font-size: 9px;
+    border-radius: 50px;
+    height: 12px;
+    width: 12px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+    top: 4px;
+  }
+  .discoverIcon {
+    display: inline-flex !important;
+  }
+}

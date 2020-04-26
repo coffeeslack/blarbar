@@ -1,0 +1,43 @@
+.dragUsersModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 6;
+}
+@keyframes slide {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dragUsersModalBlind {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  animation: fade 0.1s ease both;
+  animation-delay: 0.1s;
+}
+.dragUsersModalContainer {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  animation: slide 0.2s ease;
+}

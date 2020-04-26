@@ -1,0 +1,16 @@
+.welcomeContainer {
+  text-align: center;
+  padding: 15px;
+}
+.welcomeGreeting {
+  font-size: 25px;
+  color: #535353;
+}
+.welcomeMessage {
+  color: #f5778c;
+  font-size: 18px;
+}
+.welcomeHint {
+  margin-top: 10px;
+  color: grey;
+}

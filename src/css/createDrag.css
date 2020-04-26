@@ -1,0 +1,274 @@
+.createDragPostBtn {
+  display: inline-block;
+  width: 100%;
+  margin: 30px auto;
+  background: none;
+  border: none;
+  color: white;
+}
+.createDragPostBtn span {
+  background-color: #1278dc;
+  padding: 10px;
+  border-radius: 50px;
+  width: 40%;
+  display: inline-block;
+}
+.createDragPostBtn:focus {
+  outline: none;
+}
+.createDragForm {
+  margin-top: 35px;
+  padding: 10px;
+}
+#imageInput,
+#imageInput1,
+#imageInput2 {
+  display: none;
+}
+.createFormPicContainer {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  border: 0.5px solid #c5c5c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 180px;
+}
+.createFormPicContainer img {
+  /* border-radius: 8px; */
+  /* border: 0.5px solid #c5c5c5; */
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  /* object-position: 0px 0px; */
+}
+.createFormCaption textarea {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 0.5px solid #c5c5c5;
+  padding: 10px;
+  word-wrap: break-word;
+  height: 100px;
+}
+.createFormCaption textarea:focus {
+  outline: none;
+  border: 1px solid royalblue;
+  border-radius: 5px;
+}
+.createFormCaption textarea::placeholder {
+  color: #a5a3a3;
+  font-size: 13px;
+}
+.createFormOptions {
+  width: 100%;
+  margin-top: 10px;
+}
+.createFormOption1,
+.createFormOption2 {
+  display: inline-block;
+  border: 0.5px solid #c5c5c5;
+  padding: 5px 10px;
+  border-radius: 50px;
+  width: 45%;
+}
+.createFormOption2 {
+  text-align: right;
+}
+.createFormOption1:focus,
+.createFormOption2:focus {
+  outline: none;
+  border: 1px solid royalblue;
+}
+.createFormVs {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  color: #a5a3a3;
+}
+.createFormHashtags {
+  margin-top: 10px;
+  width: 100%;
+}
+.createFormHashtags input {
+  width: 100%;
+  border-radius: 5px;
+  border: 0.5px solid #c5c5c5;
+  padding: 10px;
+  color: royalblue;
+}
+.createFormHashtags input:focus {
+  outline: none;
+  border: 1px solid royalblue;
+}
+.creatingLoaderContainer {
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+.creatingLoader {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  border: 1px solid #c5c5c5;
+  display: flex;
+  align-items: center;
+}
+#loaderStatus {
+  background: #1278dc;
+  height: 3px;
+  border-radius: 10px;
+}
+.loaderCaption {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.createTypes {
+  width: 50%;
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.imageIconContainer {
+  width: 50%;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  justify-content: center;
+}
+.imageIconContainer:last-child {
+  margin-right: 0;
+}
+.imageIconContainer:first-child {
+  margin-left: -15px;
+}
+.imageIconSelected {
+  background: #1278dc;
+  color: white !important;
+  border: none !important;
+  padding: 10px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  transition: 0.2s ease;
+}
+.singleImage {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  font-size: 25px;
+}
+.doubleImage {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  font-size: 25px;
+}
+.image1 {
+  height: 180px;
+  width: 50%;
+  border-right: 1px solid lightgrey;
+  overflow: hidden;
+}
+.image2 {
+  height: 180px;
+  width: 50%;
+  overflow: hidden;
+}
+.flashIcon {
+  position: absolute;
+  font-size: 40px;
+  color: lightgray;
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .navbar {
+    position: fixed;
+    top: 1px;
+    right: 35%;
+    background: none;
+    width: 30%;
+    padding: 2px;
+    border-radius: 50px;
+    height: 35px;
+    z-index: 2;
+  }
+  .createDragBody {
+    width: 60%;
+    margin: 0px auto;
+    padding: 30px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .createDragBody {
+    width: 45%;
+    margin: 0px auto;
+    padding: 30px;
+    height: 100%;
+    margin-top: -20px;
+  }
+  .createDragPostBtn {
+    display: inline-block;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: -30px;
+    background: none;
+    border: none;
+    color: white;
+  }
+
+  .createDragPostBtn span {
+    background-color: #1278dc;
+    padding: 10px;
+    border-radius: 50px;
+    width: 20%;
+    margin-top: -10px;
+    display: inline-block;
+  }
+  .createFormPicContainer img,
+  .createDragPostBtn {
+    cursor: pointer;
+  }
+  .image1 {
+    height: 300px;
+    width: 50%;
+    border-right: 1px solid lightgrey;
+    overflow: hidden;
+  }
+  .image2 {
+    height: 300px;
+    width: 50%;
+    overflow: hidden;
+  }
+  .createFormPicContainer {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    border: 0.5px solid #c5c5c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 300px;
+  }
+}
